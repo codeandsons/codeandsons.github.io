@@ -408,3 +408,35 @@ a:hover, a:active {
 #social li a#twitter:hover {
 	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/twitter_red.png);
 }
+
+
+
+
+ul.code {
+	margin: 0px;
+	float: left;
+	height: auto;
+	width: calc(100% - 20px);
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+ul.code > li {
+	color: #000000;
+	font-family: monospace;
+	line-height: 1.5em;
+	word-wrap: break-word;
+	margin: 0px;
+	float: left;
+	height: auto;
+	width: 100%;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+ul.code > li.bracket {
+	padding-left: 0px;
+}
