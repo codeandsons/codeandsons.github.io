@@ -1,0 +1,410 @@
+/* YUI 3.8.1 (build 5795) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+
+
+
+
+/* --------------------------------------------------------------------------- Every Page ---------------------------------------------------------------------------*/
+html {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+/* -------------------------------------------------- Text -------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, p, li {
+    padding: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: .8em;
+    margin-left: 0px;
+    line-height: 1.2em;
+}
+h1, h2, h3 {
+    font-family: Oxygen, 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.3em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: .8em;
+}
+h6 {
+    font-size: .6em;
+}
+p, li {
+    line-height: 1.4em;
+    margin-bottom: 1.4em;
+    font-size: .875em; /* 14px */
+}
+ul li {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+ol li {
+    list-style-type: decimal;
+    margin-left: 40px;
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+blockquote {
+    width: 80%;
+    height: auto;
+    line-height: 1.4em;
+    margin-bottom: 1.4em;
+    font-size: .875em;
+    background-color: #f8f8f8;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+
+
+.jumbo {
+	font-weight: bold;
+}
+
+
+
+/* ------------------------- Links ------------------------- */
+a, a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    font-weight: 600;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    cursor: pointer;
+}
+a, a:link, a:visited {
+    color: #000000;
+    text-shadow: 1px 1px 1px #c0c0c0;
+    filter: dropshadow(color=#77787b, offx=1, offy=1);
+}
+a:hover, a:active {
+    color: #d7272d;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #d7272d;
+    text-shadow: none;
+    filter: none;
+}
+
+
+
+
+
+/* -------------------------------------------------- Header -------------------------------------------------- */
+#header {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+/*------------------------------ Navigation ------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+	#header img.header_logo {
+		width: 84px;
+		height: 50px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#menu {
+		width: 50px;
+		height: 30px;
+		float: right;
+		padding: 0px;
+		margin: 0px;
+		display: block;
+		background:#ffffff;
+		text-align: center;
+		font-size: 30px;line-height: 30px;padding-top: 10px;padding-bottom: 10px;
+		cursor: pointer;
+	}
+
+	#nav.js {
+		display: none;
+	}
+
+	ul#nav {
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 0px;
+		padding: 0px;
+		background-color: #f8f8f8;
+	}
+
+	ul#nav li {
+		width:calc(100% - 10px);
+		height: 30px;
+		float: left;
+		text-align: left;
+		padding-top: 10px;
+		padding-left: 10px;
+		margin: 0px;
+		list-style: none;
+	}
+	ul#nav li a {
+		font-style:condensed;
+		font-size: 22px;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #000000;
+		text-shadow: none;
+		line-height: 1em;
+		letter-spacing: 1px;
+	}
+
+	ul#nav li.parent:hover > a {
+    	border-bottom: 1px solid #d7272d;
+	}
+
+	ul#nav li.selected > a {
+		color: #d7272d;
+		border-bottom: 1px solid #d7272d;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	#header img.header_logo {
+		width: 168px;
+		height: 100px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	ul#nav {
+		width: calc(100% - 168px);
+		height: auto;
+		float: left;
+		margin: 0px;
+		padding: 0px;
+	}
+		ul#nav li {
+		width: calc(100% / 3);
+		height: 30px;
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		text-align: center;
+		list-style: none;
+	}
+	ul#nav li a {
+		font-size: 22px;
+		line-height: 100px;
+		font-weight: normal;
+		font-style: condensed;
+		text-transform: uppercase;
+		color: #000000;
+		letter-spacing: 1px;
+		text-shadow: none;
+	}
+
+	ul#nav li.parent:hover > a {
+		border-bottom: 3px solid #d7272d;
+	}
+
+	ul#nav li.selected > a {
+		color: #d7272d;
+		border-bottom: 3px solid #d7272d;
+	}
+
+	#menu {
+    	display: none;
+	}
+
+}
+
+
+
+
+/* -------------------------------------------------- Body -------------------------------------------------- */
+#belly {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-botton: 0px;
+    padding: 0px;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+
+	#content, .content {
+		float: left;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		padding: 0px;
+	}
+	.content .section, #content .section {
+		float: left;
+		width: calc(100% - 40px);
+		height: auto;
+		padding: 20px;
+		margin: 0px;
+		position: relative;
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+
+    #content, .content {
+        width: 100%;
+        float: left;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+    .content .section, #content .section {
+        float: left;
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 20px;
+        margin: 0px;
+        position: relative;
+    }
+
+}
+
+
+
+
+
+/* -------------------------------------------------- Footer -------------------------------------------------- */
+#footer {
+	width: calc(100% - 40px);
+    height: auto;
+    float: left;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*background-color: #f3f3f3;*/
+	background-color: #ffffff;
+}
+#copyright {
+	width: calc(50% - 10px);
+	height: auto;
+	float: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#copyright img.footer_logo {
+	width: 27px;
+	height: 16px;
+	float: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: calc(100% - 27px);
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#copyright p.name {
+    font-size: .75em;
+	line-height: 1.0em;
+	margin-bottom: 0px;
+    color: #77787b;
+}
+#copyright p.name a, #copyright p.name a:link, #copyright p.name a:visited, #copyright p.name a:hover, #copyright p.name a:active {
+    color: #000000;
+    text-shadow: none;
+    filter: none;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+#social {
+    width: calc(50% - 10px);
+    height: auto;
+    float: left;
+    padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+#social li {
+	width: 25px;
+	height: auto;
+	float: right;
+	margin: 0px;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+#social li a.social_logo {
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+}
+#social li a#github {
+	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/github_black.png);
+}
+#social li a#github:hover {
+	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/github_red.png);
+}
+#social li a#linkedin {
+	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/linkedin_black.png);
+}
+#social li a#linkedin:hover {
+	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/linkedin_red.png);
+}
+#social li a#twitter {
+	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/twitter_black.png);
+}
+#social li a#twitter:hover {
+	background-image: url(http://kieckhafer-img.s3.amazonaws.com/social/twitter_red.png);
+}
