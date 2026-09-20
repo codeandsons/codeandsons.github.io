@@ -30,7 +30,7 @@ Magic Numbers and playoff clinching & elimination scenarios for the worlds most 
 
 ### [Stadiums.me](https://stadiums.me)
 
-Track your visits to current and historical MLB, NBA, NFL, and NHL stadiums.
+Track your visits to current and historical MLB, NBA, NFL, and NHL stadiums. Email me for an invite to the beta.
 
 ### [The Title Belt](https://thetitlebelt.com)
 
